@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.categories{
+    flex: 1;
+    text-align: right;
+}
+
+.categories ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.categories ul li a{
+    color:brown;
+    text-decoration: none;
+    font-size: 13px;
+}
