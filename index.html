@@ -9,20 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body id="body">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <section class="header">
         <nav>
             <a href="index.html" id="logo"><img src="https://w7.pngwing.com/pngs/354/730/png-transparent-graphics-crown-cap-logo-king-fahad-medical-city-logo-ring-bracelet-logo.png"></a>
             <!--Categories-->
-            <div class="categories">
+            <div class="categories" id="categories">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="newCollection.html">קולקציה חדשה</a></li>
                     <li><a href="coverhead.html">כיסויי ראש</a></li>
                     <li><a href="accessories.html">תכשיטים ואקססוריז</a></li>
                     <li><a href="sale.html">מבצעים חמים</a></li>
                 </ul>
-            </div>
+            </div> 
+                <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
 
@@ -31,6 +35,52 @@
         <p>עוד כל מיני דברים שנכתוב פה</p>
         <a href="" class="hero-btn">לפרטים נוספים</a>
     </div>
-    
+
+ <!-------JavaScript for menu bar------->
+ <script>
+    var categories=document.getElementById("categories");
+    function showMenu(){
+        categories.style.right="0";
+    }
+    function hideMenu(){
+        categories.style.right="-200px";
+    }
+ </script> 
+
+<section class="feedbacks">
+    <h1>מה הלקוחות שלנו אומרות</h1>
+
+    <div class="row">
+        <div class="feedbacks-col">
+            <img src="woman.jpeg">
+            <div>
+                <p>
+                    מטפחות איכותיות ממש! מגווןן אדיר ושירות סוףףף
+                </p>
+                <h3>רחלי כהן</h3>                
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+
+        <div class="feedbacks-col">
+            <img src="images.jpeg">
+            <div>
+                <p>
+                    וואו ואוואוו!! אין על המוצרים שלכם בעולם! משלוח מהיר ואיכות בשמיים
+                </p>
+                <h3>ברכה ביטון</h3>                
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section> 
 </body>
 </html>
