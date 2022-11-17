@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding:0;
+    font-family: 'Dancing Script', cursive;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -96,39 +97,44 @@ nav img{
 }
 */
 .text-box{
-    width: 65%;
-    color: palevioletred;
+    width: 78%;
+    height: 62%;
+    color: whitesmoke;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    justify-content: center;
+    background-image: url(images/mitpachat-big.jpg);
+    background-position: center;
 }
 
 .text-box h1{
-    font-size: 62px;
+    font-size: 80px;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
 }
 
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
+.text-box a{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: palevioletred;
-    border: 1px solid palevioletred;
+    color: white;
+    border: 1px solid white;
     padding: 12px 34px;
-    font-size: 13px;
     background: transparent;
     position: relative;
     cursor: pointer;
 }
 
 .hero-btn:hover{
-    border: 1px solid palevioletred;
-    background: pink;
+    border: 1px solid white;
+    background: palevioletred;
     transition: 1s;
 }
 
@@ -218,7 +224,12 @@ nav .fa{
 
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 20px;
+        font-size: 60px;
+        justify-content: center;
+    }
+
+    .text-box a{
+        font-size: 30px;
     }
 
     .categories ul li{
