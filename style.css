@@ -26,13 +26,14 @@ body{
 
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding-right: 1%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav img{
-    width: 150px;
+    width: 100px;
+    padding: 5px;
 }
 
 .categories{
@@ -53,6 +54,12 @@ nav img{
     font-size: 18px;
 }
 
+.categories ul li a:hover{
+    color: palevioletred;
+}
+
+/*----underline when hover----*/
+/*
 .categories ul li::after{
     content: '';
     width: 0%;
@@ -66,7 +73,7 @@ nav img{
 .categories ul li:hover::after{
     width: 100%;
 }
-
+*/
 .text-box{
     width: 65%;
     color: palevioletred;
@@ -207,6 +214,11 @@ nav .fa{
         text-align: right;
         z-index: 2;
         transition: 1s;
+    }
+
+    nav img{
+        position: absolute;
+        left: 2%;
     }
 
     nav .fa{
