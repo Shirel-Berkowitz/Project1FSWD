@@ -17,6 +17,13 @@ body{
     width: 100%;
 }
 
+#menuIcon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: palevioletred;
+}
+
 nav{
     display: flex;
     padding: 2% 6%;
