@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,8 @@
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
   crossorigin="anonymous"></script>
-</head>
-<body class="basket">
+  </head>
+  <body class="basket">
     <header>
         <h1>קולקציית 2022</h1>
         <div class="basket-icon">
@@ -41,68 +41,106 @@
             <i class="fa fa-bars" id="menuIcon" onclick="showMenu()" ondblclick="hideMenu()"></i>
         </nav>
     </section>
-<!-------JavaScript for menu bar------->
-<script>
-    var categories=document.getElementById("categories");
-    function hideMenu(){
+    <!-------JavaScript for menu bar------->
+    <script>
+      var categories=document.getElementById("categories");
+      function hideMenu(){
         categories.style.right="-200px";
-    }
-    function showMenu(){
+      }
+      function showMenu(){
         categories.style.right="0";
-    }
+      }
+    </script> 
     
- </script> 
+    <div class="wrapper">
 
-
-    <div class="productsDIV">
-        <ul class="products elementor-grid columns-4">
-            <li class="product1">
-                <section class="img1">
-                    <img src="images/IMG_3383-scaled.jpg">
-                    <h4>מטפחת לונג חמרה</h4>
-                    <h3>69.90</h3>
-                    <button>הוסף לסל</button>
-                </section>
-            </li>
-
-            <li class="product2">
-                <section class="img1">
-                    <img src="images/IMG_3383-scaled.jpg">
-                    <h4>מטפחת לונג חמרה</h4>
-                    <h3>69.90</h3>
-                    <button>הוסף לסל</button>
-                </section>
-            </li>
-
-            <li class="product3">
-                <section class="img1">
-                    <img src="images/IMG_3383-scaled.jpg">
-                    <h4>מטפחת לונג חמרה</h4>
-                    <h3>69.90</h3>
-                    <button>הוסף לסל</button>
-                </section>
-            </li>
-
-            <li class="product4">
-                <section class="img1">
-                    <img src="images/IMG_3383-scaled.jpg">
-                    <h4>מטפחת לונג חמרה</h4>
-                    <h3>69.90</h3>
-                    <button>הוסף לסל</button>
-                </section>
-            </li>
-        </ul>
-            
-          
-        <script>
-            $("button").on("click", function(){
-                $(this).closest("li").find("img").clone().addClass("zoom").appendTo("body");
-                setTimeout(function(){
-                    $(".zoom").remove();
-                }, 1000);
-            });
-        </script>
+      <div class="products">
+        <div class="product-container">
+          <div class="product-item">
+            <img src="images/IMG_3383-scaled.jpg" alt="מטפחת לונג חמרה" style="width:100%">
+            <h4>מטפחת לונג חמרה</h4>
+            <h3>69.90</h3>
+            <button type="button" class="add-btn">הוסף לסל</button>
+          </div>
+        </div>
         
+
+        <div class="product-container">
+          <div class="product-item">
+            <img src="images/mitpachat1.jpg" alt="מטפחת לונג חמרה" style="width:100%">
+            <h4>מטפחת לונג חמרה</h4>
+            <h3>69.90</h3>
+            <button type="button" class="add-btn">הוסף לסל</button>
+          </div>
+        </div>
+        
+
+        <div class="product-container">
+          <div class="product-item">
+            <img src="images/mitpachat2.jpg" alt="מטפחת לונג חמרה" style="width:100%">
+            <h4>מטפחת לונג חמרה</h4>
+            <h3>69.90</h3>
+            <button type="button" class="add-btn">הוסף לסל</button>
+          </div>
+        </div>
+        
+
+        <div class="product-container">
+          <div class="product-item">
+            <img src="images/mitpachat3.jpg" alt="מטפחת לונג חמרה" style="width:100%">
+            <h4>מטפחת לונג חמרה</h4>
+            <h3>69.90</h3>
+            <button type="button" class="add-btn">הוסף לסל</button>
+          </div>
+        </div>
+        
+
+        <div class="product-container">
+          <div class="product-item">
+            <img src="images/mitpachat4.jpg" alt="מטפחת לונג חמרה" style="width:100%">
+            <h4>מטפחת לונג חמרה</h4>
+            <h3>69.90</h3>
+            <button type="button" class="add-btn">הוסף לסל</button>
+          </div>
+        </div>
+        
+
+        <div class="product-container">
+          <div class="product-item">
+            <img src="images/mitpachat5.jpg" alt="מטפחת לונג חמרה" style="width:100%">
+            <h4>מטפחת לונג חמרה</h4>
+            <h3>69.90</h3>
+            <button type="button" class="add-btn">הוסף לסל</button>
+          </div>
+        </div>
+        
+
+        <div class="product-container">
+          <div class="product-item">
+            <img src="images/mitpachat6.jpg" alt="מטפחת לונג חמרה" style="width:100%">
+            <h4>מטפחת לונג חמרה</h4>
+            <h3>69.90</h3>
+            <button type="button" class="add-btn">הוסף לסל</button>
+          </div>
+        </div>
+        
+
+      </div>
+</div>
+    
+  
+<script>
+    $("button").on("click", function(){
+        $(this).closest("li").find("img").clone().addClass("zoom").appendTo("body");
+        setTimeout(function(){
+            $(".zoom").remove();
+        }, 1000);
+    });
+</script>
+
     </div>
-</body>
+
+
+
+  </body>
 </html>

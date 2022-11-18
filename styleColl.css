@@ -57,6 +57,7 @@ nav img{
 .categories ul li a:hover{
     color: palevioletred;
 }
+
 nav .fa{
     display: none;
 }
@@ -107,28 +108,34 @@ nav .fa{
     text-align: center;
 }
 
+.wrapper{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 
-.products{
-    display: flexbox;
-
+product-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    transition: all 0.4s ease;
+    padding: 0.5rem 1rem;
 }
 
 /*section for img1 include: h4,h3,button*/
-.products section{
-    position:absolute;
-    width:-10%;
-    top:30%;
-    right:30%;
-    margin-right:5%; 
+product-item{
+    /*width: calc(50% -16px);*/
+    margin: 8px;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
 }
 
 /*section for img1*/
-.products section img{
-    width:150px;
-    height:200px;
+.product-item img{
+    display: block;
+    width:100%;
     border-color: darksalmon;
-    border:20px;
-    flex:33%;
 }
 
 /*section for h4 of img1*/
