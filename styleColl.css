@@ -108,27 +108,18 @@ nav .fa{
     text-align: center;
 }
 
-.wrapper{
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-product-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-    transition: all 0.4s ease;
-    padding: 0.5rem 1rem;
+.product-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
 }
 
 /*section for img1 include: h4,h3,button*/
-product-item{
-    /*width: calc(50% -16px);*/
+.product-item{
     margin: 8px;
     max-width: 300px;
     position: relative;
-    overflow: hidden;
 }
 
 /*section for img1*/
