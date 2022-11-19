@@ -62,6 +62,10 @@ nav .fa{
     display: none;
 }
 
+.wrapper{
+    flex-wrap: wrap;
+}
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
