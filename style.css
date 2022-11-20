@@ -106,19 +106,23 @@ nav img{
     transform: translate(-50%,-50%);
     text-align: center;
     justify-content: center;
-    background-image: url(images/mitpachat-big.jpg);
+    background-image: url(https://zohara.shop/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-06-at-15.35.52.jpeg);
     background-position: center;
+    background-size: 500px, 200px;
 }
 
 .text-box h1{
-    font-size: 80px;
+    font-size: 100px;
     padding: 20px;
     font-family: 'Dancing Script', cursive;
+    color: bisque;
 }
 
 .text-box a{
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
+    color: bisque;
+
 }
 
 .hero-btn{
@@ -134,7 +138,7 @@ nav img{
 
 .hero-btn:hover{
     border: 1px solid white;
-    background: palevioletred;
+    background:burlywood;
     transition: 1s;
 }
 
@@ -145,21 +149,32 @@ nav .fa{
 /*Feedbacks*/
 
 .feedbacks{
-    width:80%;
     margin: auto;
     padding-top: 100px;
     text-align: center;
+    /*grid-gap: 10px, 20px;*/
+    width: 30%;
+    gap: 10%;
+    display:inline;
+   
+}
+
+.feedbacks h1{
+    color: palevioletred;
 }
 
 .feedbacks-col{
     flex-basis: 44%;
     border-radius: 10px;
-    margin-bottom: 5%;
+    /*margin-bottom: 5%;*/
     text-align: right;
     background: #fff3f3;
     padding:25px;
     cursor: pointer;
-    display: flex;
+    max-width: 20%;
+    gap: 10px, 10px;
+    display: inline-block;
+       
 }
 
 .feedbacks-col img{
@@ -199,6 +214,37 @@ nav .fa{
     color: white;
     margin-bottom: 40px;
     padding: 0;
+}
+
+.call2Action h3{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*Sales*/
+.Sales{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/fire-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.Sales h1{
+    color: orange;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 50px;
+}
+
+.Sales h3{
+    color: red;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 50px;
 }
 
 /*footer*/
@@ -259,6 +305,18 @@ nav .fa{
         margin:10px;
         font-size: 22px;
         cursor: pointer;
+    }
+
+    .feedbacks{
+        width:80%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+        /*grid-gap: 10px, 20px;*/
+        gap: 10%;
+        display:flex;
+        flex-shrink: 1;
+       
     }
 
     .feedbacks-col img{

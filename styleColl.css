@@ -62,10 +62,6 @@ nav .fa{
     display: none;
 }
 
-.wrapper{
-    flex-wrap: wrap;
-}
-
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -100,8 +96,8 @@ nav .fa{
         cursor: pointer;
     }
 }
-
-/*basket button-הוסף לסל*/
+/*design to the products*/
+/*basket button*/
 .basket h1{
     width: 65%;
     color: palevioletred;
@@ -112,44 +108,40 @@ nav .fa{
     text-align: center;
 }
 
-.product-container{
-    display: grid;
+.products li{
+    display: inline-block;
+    /*grid-area: 2 / 1 / span 2 / span 3;*/
     grid-template-columns: auto auto auto auto;
     gap: 10px;
     padding: 10px;
-}
-
-/*section for img1 include: h4,h3,button*/
-.product-item{
-    margin: 8px;
-    max-width: 300px;
+    bottom:400px ;
+    width: 20%;
     position: relative;
 }
 
 /*section for img1*/
-.product-item img{
+.products li img{
     display: block;
     width:100%;
-    border-color: darksalmon;
+    height: 75%;
 }
 
 /*section for h4 of img1*/
-.products h4{
+.products li h4{
     text-align: center;
     position: relative;
     color:rgb(186, 42, 90);
-
 }
 
 /*section for h3 of img1*/
-.products h3{
+.products li h3{
     text-align: center;
     position: relative;
     color:rgb(125, 18, 54);
 }
 
 /*section for button of img1*/
-.products button{
+.products li button{
     text-decoration: none;
     text-align: center;
     position: relative;
@@ -169,6 +161,7 @@ button:hover{
     background: rgb(241, 234, 235);
     transition: 1s;
 }
+
 
 .basket-icon img{
     position: absolute;
@@ -192,6 +185,26 @@ button:hover{
     height:40px;
 }
 
+/*footer*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: palevioletred;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
 
 /*Basket animation styles*/
 .zoom{
