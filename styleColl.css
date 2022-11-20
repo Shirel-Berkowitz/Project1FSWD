@@ -62,40 +62,7 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
 
-    .categories ul li{
-        display: block;
-    }
-
-    .categories{
-        position: absolute;
-        background: #fff3f3;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align: right;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    nav img{
-        position: absolute;
-        left: 2%;
-    }
-
-    nav .fa{
-        display: block;
-        color:brown;
-        margin:10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-}
 /*design to the products*/
 /*basket button*/
 .basket h1{
@@ -117,6 +84,10 @@ nav .fa{
     bottom:400px ;
     width: 20%;
     position: relative;
+    margin: 7px;
+    right: 3%;
+    left: 3%;
+
 }
 
 /*section for img1*/
@@ -124,6 +95,8 @@ nav .fa{
     display: block;
     width:100%;
     height: 75%;
+    max-width: 245px;
+    max-height: 330px;
 }
 
 /*section for h4 of img1*/
@@ -220,4 +193,39 @@ button:hover{
     0%{opacity: 0}
     50%{opacity: 1}
     100%{opacity: 0; right:40px}
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .categories ul li{
+        display: block;
+    }
+
+    .categories{
+        position: absolute;
+        background: #fff3f3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: right;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav img{
+        position: absolute;
+        left: 2%;
+    }
+
+    nav .fa{
+        display: block;
+        color:brown;
+        margin:10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
 }
