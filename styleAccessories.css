@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Varela Round', sans-serif;
+}
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+/*style for the nav-Categories*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+}
+
+#menuIcon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: palevioletred;
+}
+
+nav{
+    display: flex;
+    padding-right: 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+    padding: 5px;
+}
+
+.categories{
+    flex: 1;
+    text-align: right;
+}
+
+.categories ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.categories ul li a{
+    color:brown;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.categories ul li a:hover{
+    color: palevioletred;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+/*design to the products*/
+/*basket button*/
+.basket h1{
+    width: 65%;
+    color: palevioletred;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.products li{
+    display: inline-block;
+    /*grid-area: 2 / 1 / span 2 / span 3;*/
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    bottom:400px ;
+    width: 20%;
+    position: relative;
+    margin: 7px;
+    right: 3%;
+    left: 3%;
+
+}
+
+/*section for img1*/
+.products li img{
+    display: block;
+    width:100%;
+    height: 75%;
+    max-width: 245px;
+    max-height: 330px;
+}
+
+/*section for h4 of img1*/
+.products li h4{
+    text-align: center;
+    position: relative;
+    color:rgb(186, 42, 90);
+}
+
+/*section for h3 of img1*/
+.products li h3{
+    text-align: center;
+    position: relative;
+    color:rgb(125, 18, 54);
+}
+
+/*section for button of img1*/
+.products li button{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    color:rgb(186, 42, 90);
+    background-color: #fff3f3;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid palevioletred;
+    padding: 10px 24px;
+    font-size: 13px;
+    display: inline-block;
+    width:100%;
+}
+
+button:hover{
+    border: 1px solid palevioletred;
+    background: rgb(241, 234, 235);
+    transition: 1s;
+}
+
+
+.basket-icon img{
+    position: absolute;
+    top:20px;
+    left: 110px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    width:50px;
+    height:50px;
+}
+
+.user-icon img{
+    position: absolute;
+    top:28px;
+    left: 50px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    width:40px;
+    height:40px;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: palevioletred;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*Basket animation styles*/
+.zoom{
+    position: absolute;
+    top:40px;
+    right:50%;
+    width:40px;
+    opacity: 0;
+    animation: zoom 1s case forwards;
+}
+
+@keyframes zoom {
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0; right:40px}
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .categories ul li{
+        display: block;
+    }
+
+    .categories{
+        position: absolute;
+        background: #fff3f3;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: right;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav img{
+        position: absolute;
+        left: 2%;
+    }
+
+    nav .fa{
+        display: block;
+        color:brown;
+        margin:10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
