@@ -13,7 +13,7 @@ body{
 
 /*style for the nav-Categories*/
 .header{
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
 }
 
@@ -81,7 +81,7 @@ nav .fa{
     grid-template-columns: auto auto auto auto;
     gap: 10px;
     padding: 10px;
-    bottom:400px ;
+    bottom:120px;
     width: 20%;
     position: relative;
     margin: 7px;
@@ -129,7 +129,7 @@ nav .fa{
     width:100%;
 }
 
-button:hover{
+.products li button:hover{
     border: 1px solid palevioletred;
     background: rgb(241, 234, 235);
     transition: 1s;
@@ -158,6 +158,29 @@ button:hover{
     height:40px;
 }
 
+.search-icon img{
+    position: absolute;
+    top:4%;
+    left: 170px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    width:40px;
+    height:40px;
+}
+
+.search-icon input{
+    position: absolute;
+    top:50px;
+    left: 220px;
+    margin: 0 13px;
+    /*padding: 18px 0;*/
+    width:140px;
+    height: 30px;
+    color: brown;
+    border-color: brown;
+}
+
 /*footer*/
 
 .footer{
@@ -170,6 +193,7 @@ button:hover{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+    font-size: x-large;
 }
 
 .icons .fa{
@@ -177,22 +201,6 @@ button:hover{
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
-}
-
-/*Basket animation styles*/
-.zoom{
-    position: absolute;
-    top:40px;
-    right:50%;
-    width:40px;
-    opacity: 0;
-    animation: zoom 1s case forwards;
-}
-
-@keyframes zoom {
-    0%{opacity: 0}
-    50%{opacity: 1}
-    100%{opacity: 0; right:40px}
 }
 
 @media(max-width: 700px){
@@ -216,9 +224,14 @@ button:hover{
         transition: 1s;
     }
 
-    nav img{
+     /*logo*/
+     nav img{
         position: absolute;
-        left: 2%;
+        right: 7%;
+        width:50px;
+        height: 50px;
+        top:5%;
+
     }
 
     nav .fa{

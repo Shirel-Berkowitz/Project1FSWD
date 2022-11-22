@@ -19,33 +19,40 @@
 </head>
 
 <body id="body">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <div class="basket-icon">
-        <img src="images/icons&logo/basket-icon.png">
-    </div>
-    <div class="user-icon">
-        <img src="images/icons&logo/userIcon.png">
-    </div>
-    
+        <div class="basket-icon">
+            <img src="images/icons&logo/basket-icon.png">
+        </div>
+        <div class="user-icon">
+            <img src="images/icons&logo/userIcon.png">
+        </div>
+        <div class="search-icon">
+            <img src="images/icons&logo/search-icon.png">
+            <label for="search"></label>
+            <input type="search" name="search" id="search" placeholder=" חיפוש">
+        </div>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/icons&logo/logo.png"></a>
+                <!--Categories-->
+                <div class="categories" id="categories">
+                    <i class="fa fa-times" id="" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="collection.html">קולקציה חדשה</a></li>
+                        <li><a href="headCovers.html">כיסויי ראש</a></li>
+                        <li><a href="accessories.html">תכשיטים ואקססוריז</a></li>
+                        <li><a href="#Sales">מבצעים חמים</a></li>
+                    </ul>
+                </div> 
+                <i class="fa fa-bars" id="menuIcon" onclick="showMenu()" ondblclick="hideMenu()"></i>
+            </nav>
+        </section>    
+    </header>
     
 
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/peacock.jpg"></a>
-            <!--Categories-->
-            <div class="categories" id="categories">
-                <i class="fa fa-times" id="" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="collection.html">קולקציה חדשה</a></li>
-                    <li><a href="headCovers.html">כיסויי ראש</a></li>
-                    <li><a href="accessories.html">תכשיטים ואקססוריז</a></li>
-                    <li><a href="sale.html">מבצעים חמים</a></li>
-                </ul>
-            </div> 
-            <i class="fa fa-bars" id="menuIcon" onclick="showMenu()" ondblclick="hideMenu()"></i>
-        </nav>
-    </section>
+    
 
     <div class="main-picture">
         <h1>Winter Collection</h1>
@@ -69,7 +76,7 @@
 
     <div class="row">
         <div class="feedbacks-col">
-            <img src="images\woman.jpeg">
+            <img src="images/icons&logo/woman.jpeg">
             <div>
                 <p>
                     מטפחות איכותיות ממש! מגווןן אדיר ושירות סוףףף
@@ -132,8 +139,10 @@
 
 <!--Footer-->
 <footer class="footer" id="footer">
-    <h4>---שם החברה---</h4>
+    <h4>משודרגת</h4>
     <p>דואגים שאף פעם לא יהיה לך משעמם בראש! <br>עם מיטב המטפחות בעיצובים מגוונים ובמחירים שווים לכל כיס!</p><br>
+    <p>ליצירת קשר:</p>
+    <label for="phone">055-6789146</label><br><br>
     <p><i class="fa fa-heart-o"></i>בואי לעקוב אחרינו<i class="fa fa-heart-o"></i></p>
     <div class="icons">
         <i class="fa fa-facebook"></i>
