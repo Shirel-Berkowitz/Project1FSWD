@@ -163,7 +163,6 @@ nav .fa{
     top:4%;
     left: 170px;
     margin: 0 13px;
-    cursor: pointer;
     padding: 18px 0;
     width:40px;
     height:40px;
@@ -204,7 +203,50 @@ nav .fa{
 }
 
 
-@media(max-width: 700px){
+@media(max-width: 820px){
+    .basket-icon img{
+        position: absolute;
+        top:3%;
+        left: 70px;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        width:40px;
+        height:40px;
+    }
+    
+    .user-icon img{
+        position: absolute;
+        top:4%;
+        left: 20px;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        width:30px;
+        height:30px;
+    }
+    
+    .search-icon img{
+        position: absolute;
+        top:4%;
+        left: 120px;
+        margin: 0 13px;
+        padding: 18px 0;
+        width:30px;
+        height:30px;
+    }
+    
+    .search-icon input{
+        position: absolute;
+        top:43px;
+        left: 170px;
+        margin: 0 13px;
+        /*padding: 18px 0;*/
+        width:120px;
+        height: 30px;
+        color: brown;
+        border-color: brown;
+    }
     .text-box h1{
         font-size: 20px;
     }
