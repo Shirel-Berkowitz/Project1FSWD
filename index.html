@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </head>
 
 <body id="body">
@@ -31,14 +32,14 @@
         <div class="search-icon">
             <img src="images/icons&logo/search-icon.png">
             <label for="search"></label>
-            <input type="search" name="search" id="search" placeholder=" חיפוש">
+            <input type="search" name="search" id="search" placeholder="חיפוש">
         </div>
         <section class="header">
             <nav>
                 <a href="index.html"><img id="logo" src="images/icons&logo/logo.png"></a>
                 <!--Categories-->
                 <div class="categories" id="categories">
-                    <i class="fa fa-times" id="" onclick="hideMenu()"></i>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="collection.html">קולקציה חדשה</a></li>
                         <li><a href="headCovers.html">כיסויי ראש</a></li>
@@ -46,14 +47,11 @@
                         <li><a href="#Sales">מבצעים חמים</a></li>
                     </ul>
                 </div> 
-                <i class="fa fa-bars" id="menuIcon" onclick="showMenu()" ondblclick="hideMenu()"></i>
+                <i class="fa fa-bars" id="menuIcon" onclick="showMenu()" onclick="hideMenu()"></i>
             </nav>
         </section>    
     </header>
     
-
-    
-
     <div class="main-picture">
         <h1>Winter Collection</h1>
         <a href="collection.html" class="hero-btn">SHOP</a>
