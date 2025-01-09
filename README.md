@@ -1,6 +1,6 @@
 # Project1 - Full Stack Web Development
 
-We made a website called "משודרגת" using HTML and CSS that we learned in FSWD course in college.
+We made a website called "משודרגת" using HTML and CSS that we learned in the Full-Stck Web Development course in college.
 
 <img width="850" alt="image" src="https://user-images.githubusercontent.com/80363611/203744807-d8ec5f0c-8ff1-429b-af63-3059ce095a58.png">
 <br><br><br><br>
